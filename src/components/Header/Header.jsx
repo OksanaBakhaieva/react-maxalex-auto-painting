@@ -9,7 +9,7 @@ function Header() {
         <div className={css.header}>
             <Logo />
             <Nav />
-            <Button />
+            <Button text="Request a quote" />
             <Modal/>
         </div>
     )

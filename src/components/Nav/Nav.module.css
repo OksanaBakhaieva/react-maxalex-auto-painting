@@ -1,0 +1,26 @@
+.header {
+  display: none;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .bottom {
+    height: auto;
+    padding: 32px;
+  }
+  .logo {
+    font-size: 62px;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+}

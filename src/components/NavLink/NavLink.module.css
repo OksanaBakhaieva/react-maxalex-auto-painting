@@ -1,0 +1,12 @@
+.nav_link {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+.nav_link:hover,
+.nav_link:focus {
+  color: brown;
+  text-decoration: underline;
+}
