@@ -1,0 +1,29 @@
+.container {
+  padding: 32px;
+  background-color: black;
+}
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  border-bottom: 1px solid grey;
+  justify-content: space-between;
+}
+.item {
+  text-align: left;
+  border-bottom: 1px solid grey;
+}
+.toggleDown {
+  background-color: black;
+  stroke: white;
+}
+.toggleUp {
+}
+.question {
+  color: white;
+  font-size: 24px;
+}
+.answer {
+  color: white;
+  font-size: 22px;
+}

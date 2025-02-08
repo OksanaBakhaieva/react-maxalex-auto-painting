@@ -14,7 +14,7 @@
 }
 
 a {
-  font-weight: 500;
+  font-weight: 300;
   color: #646cff;
   text-decoration: inherit;
 }
@@ -23,11 +23,12 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
   min-width: 320px;
-  min-height: 100vh;
+  max-width: 100%;
 }
 
 h1 {

@@ -1,8 +1,5 @@
 [
-  {
-    "category": "General",
-    "questions": [
-      {
+    {
         "question": "How long does it take to paint a car?",
         "answer": "It usually takes around three days to paint a car."
       },
@@ -13,12 +10,7 @@
       {
         "question": "What types of paint do you use?",
         "answer": "We use high-quality paint materials, primarily from the Oktoral brand."
-      }
-    ]
-  },
-  {
-    "category": "Pricing & Estimates",
-    "questions": [
+      },
       {
         "question": "How much does it cost to paint my car?",
         "answer": "The cost of painting a car varies depending on the job."
@@ -30,12 +22,7 @@
       {
         "question": "Are there any additional costs I should be aware of?",
         "answer": "Our work is charged at £40 per hour."
-      }
-    ]
-  },
-  {
-    "category": "Quality & Process",
-    "questions": [
+      },
       {
         "question": "How do you ensure the quality of the paint job?",
         "answer": "We provide a three-year guarantee on our work."
@@ -45,5 +32,3 @@
         "answer": "We blend the new paint smoothly with the surrounding area to ensure there is no visible colour difference."
       }
     ]
-  }
-]

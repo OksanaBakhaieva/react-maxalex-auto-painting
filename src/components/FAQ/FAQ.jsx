@@ -1,49 +1,40 @@
 import { useState } from "react";
-import faqData from "../../../faq.json";
+import questions from "../../../faq.json";
+import Title from "../Title/Title";
 
-const FAQ = () => {
-  const [openQuestion, setOpenQuestion] = useState(null);
+import css from "./FAQ.module.css";
 
-  const toggleQuestion = (index) => {
-    setOpenQuestion(openQuestion === index ? null : index);
+function FAQ({ title }) {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center mb-6">Frequently Asked Questions</h1>
-      {faqData.map((section, sectionIndex) => (
-        <div key={sectionIndex} className="mb-6">
-          <h2 className="text-2xl font-semibold mb-2 text-gray-800">{section.category}</h2>
-          <div className="space-y-2">
-            {section.questions.map((q, qIndex) => {
-              const isOpen = openQuestion === `${sectionIndex}-${qIndex}`;
-              return (
-                <div
-                  key={qIndex}
-                  className="border border-gray-300 rounded-lg overflow-hidden"
-                >
-                  <button
-                    onClick={() => toggleQuestion(`${sectionIndex}-${qIndex}`)}
-                    className="w-full text-left p-4 bg-gray-100 hover:bg-gray-200 transition-all flex justify-between items-center"
-                  >
-                    <span className="text-lg">{q.question}</span>
-                    <span className="text-gray-600">{isOpen ? "−" : "+"}</span>
+    <div className={css.container}>
+      <Title title="FAQ" />
+      <div className={css.list}>
+        {questions.map((q, index) => {
+          const isOpen = openIndex === index;
+
+          return (
+            <div key={index} className={css.item}>
+              <h4 className={css.question}>{q.question}
+                <button className={css.toggle} onClick={() => toggle(index)}>
+                          {isOpen
+                              ? <img src='arrow_icon.png' className={css.toggleDown}></img>
+                              : <img src='arrow_icon.png' className={css.toggleUp}></img>
+                          }
                   </button>
-                  <div
-                    className={`p-4 bg-white text-gray-700 transition-all ${
-                      isOpen ? "block" : "hidden"
-                    }`}
-                  >
-                    {q.answer}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      ))}
+                </h4>
+              {isOpen && <p className={css.answer}>{q.answer}</p>}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
-};
+}
 
 export default FAQ;
