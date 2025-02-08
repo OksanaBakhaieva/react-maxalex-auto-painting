@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "icon": "/icons/icon1.svg",
+    "title": "Custom Bodywork & Paint",
+    "text": "Makalex offers customized bodywork and paint services to restore your vehicle to its pre-accident condition. Whether it's a minor dent or a major collision repair, our skilled technicians ensure a flawless finish."
+  },
+  {
+    "id": 2,
+    "icon": "/icons/icon2.svg",
+    "title": "Custom Interior Upgrades",
+    "text": "Enhance the interior of your vehicle with our bespoke interior upgrade solutions. From premium upholstery to personalized accessories, we bring your vision to life with meticulous attention to detail."
+  },
+  {
+    "id": 3,
+    "icon": "/icons/icon3.svg",
+    "title": "Performance Enhancement",
+    "text": "Experience improved performance with our custom solutions for diesel and gasoline engines. Our expertise in engine tuning and upgrades ensures optimal power and efficiency for your vehicle."
+  },
+  {
+    "id": 4,
+    "icon": "/icons/icon4.svg",
+    "title": "Custom Body Kits Installation",
+    "text": "Transform the look of your vehicle with our professional installation of custom body kits. We specialize in fitting and customizing body kits to enhance the aesthetics and aerodynamics of your vehicle."
+  },
+  {
+    "id": 5,
+    "icon": "/icons/icon5.svg",
+    "title": "Wheel & Tire Customization",
+    "text": "Personalize your vehicle with our wheel and tire customization services. From custom alloy wheels to performance tires, we offer tailored solutions to elevate the look and handling of your vehicle."
+  },
+  {
+    "id": 6,
+    "icon": "/icons/icon6.svg",
+    "title": "Exhaust System Customization",
+    "text": "Upgrade your vehicle's exhaust system for enhanced sound and performance. Our custom exhaust solutions are designed to deliver a unique acoustic experience and improved engine efficiency."
+  },
+  {
+    "id": 7,
+    "icon": "/icons/icon7.svg",
+    "title": "Custom Lighting Installations",
+    "text": "Illuminate the road with our custom lighting installations. Explore a range of lighting options including LED headlights, underglow kits, and interior lighting upgrades to personalize your vehicle's appearance."
+  },
+  {
+    "id": 8,
+    "icon": "/icons/icon8.svg",
+    "title": "Suspension Customization",
+    "text": "Achieve the perfect balance of comfort and performance with our suspension customization services. We offer tailored suspension upgrades and adjustments to suit your driving preferences."
+  },
+  {
+    "id": 9,
+    "icon": "/icons/icon9.svg",
+    "title": "Customized Paint Protection",
+    "text": "Protect your vehicle's finish with our specialized paint protection solutions. Our application of premium paint protection films and coatings ensures long-lasting defense against environmental elements."
+  }
+]

@@ -13,17 +13,25 @@
   text-align: left;
   border-bottom: 1px solid grey;
 }
-.toggleDown {
-  background-color: black;
-  stroke: white;
-}
-.toggleUp {
+
+.question_wrapper {
+  display: flex;
+  gap: 12px;
 }
 .question {
   color: white;
-  font-size: 24px;
+  font-size: 32px;
+  font-weight: 300;
+}
+.toggle {
+  background-color: black;
+  fill: white;
+  width: 32px;
+  height: 32px;
+}
+.toggleUp {
 }
 .answer {
   color: white;
-  font-size: 22px;
+  font-size: 28px;
 }

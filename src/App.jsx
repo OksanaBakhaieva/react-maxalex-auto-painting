@@ -1,21 +1,21 @@
-import './App.css';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import FAQ from './components/FAQ/FAQ';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
-import HeroLayout from './components/HeroLayout/HeroLayout';
-import Reviews from './components/Reviews/Reviews';
+import HomePage from './pages/HomePage/HomePage';
+import ServicesPage from './pages/ServicesPage/ServicesPage';
+import Footer from './components/Footer/Footer';
+
 
 function App() {
   return (
     <>
-      <Header />
-      <HeroLayout />
-      <About />
-      <FAQ />
-      <Reviews/>
-      <Contact />
-      
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<ServicesPage/>}/>
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
     </>
   )
 };
