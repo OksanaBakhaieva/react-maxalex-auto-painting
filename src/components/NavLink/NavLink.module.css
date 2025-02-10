@@ -1,12 +1,14 @@
 .nav_link {
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 600;
   text-align: center;
   color: white;
+  transition: all 250ms;
 }
 .nav_link:hover,
 .nav_link:focus {
   color: brown;
   text-decoration: underline;
+  transform: scale(1.1);
 }

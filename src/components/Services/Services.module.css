@@ -1,11 +1,11 @@
 .container {
   width: 100%;
   background-color: black;
+  opacity: 0.8;
 }
 .wrapper {
   background-color: black;
-  margin: 32px;
-  overflow: visible;
+  padding: 32px;
 }
 
 .list {

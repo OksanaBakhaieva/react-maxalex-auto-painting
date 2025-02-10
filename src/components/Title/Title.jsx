@@ -1,9 +1,15 @@
+import clsx from 'clsx';
 import css from './Title.module.css';
 
-function Title({ title }) {
+function Title({ title, variant }) {
+    const aboutClasses = clsx(css.title, {
+        [css.light] : variant === "light",
+        [css.dark] : variant === "dark"
+    });
+    
     return (
         <>
-            <h2 className={css.title}>{title}</h2>
+            <h2 className={aboutClasses}>{title}</h2>
         </>
     )
 };

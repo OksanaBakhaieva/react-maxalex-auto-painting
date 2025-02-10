@@ -7,7 +7,7 @@ function Services({services}) {
     return (
         <div className={css.container}>
             <div className={css.wrapper}>
-                <Title title="Discover our full range of custom vehicle solutions" />
+                <Title variant="light" title="Discover our full range of custom vehicle solutions" />
                 <ul className={css.list}>
                     {services.map(({id,icon,title,text}) => (
                             <>
@@ -20,7 +20,7 @@ function Services({services}) {
                                 </li>
                             </>
                         )
-                    )};
+                    )}
                 </ul>
             </div>
         </div>

@@ -2,23 +2,26 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: end;
   padding: 0 32px;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 32px;
 }
 .contact {
-  font-size: 24px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
 }
 .contact2 {
   margin-top: 32px;
-  font-size: 24px;
+  font-size: 18px;
 }
 .copyright {
   text-align: center;
+  margin-top: 16px;
+}
+.button {
+  color: brown;
 }

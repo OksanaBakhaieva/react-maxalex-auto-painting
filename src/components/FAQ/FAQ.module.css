@@ -16,22 +16,21 @@
 
 .question_wrapper {
   display: flex;
-  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
 }
 .question {
   color: white;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 300;
 }
 .toggle {
-  background-color: black;
+  padding: 0;
+  border: none;
+  background-color: transparent;
   fill: white;
-  width: 32px;
-  height: 32px;
-}
-.toggleUp {
 }
 .answer {
   color: white;
-  font-size: 28px;
+  font-size: 18px;
 }

@@ -6,10 +6,11 @@ function Hero() {
     return (
         <div className={css.hero}>
             <div className={css.container}>
-                <h1 className={css.title}>Makalex - we provide a bespoke service for all custom vehicle solutions.</h1>
-                <p className={css.text}>Trust our skilled technicians to restore your vehicle to its pre-accident condition</p>
-                
-           </div>
+                <h1 className={css.title}>
+                    We provide a bespoke service for all custom vehicle solutions.<br/>
+                    <span>Trust our skilled technicians to restore your vehicle to its pre-accident condition.</span>
+                </h1>
+            </div>
             <Services services={services} />
         </div>
     )

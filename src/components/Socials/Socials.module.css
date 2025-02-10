@@ -1,0 +1,17 @@
+.list {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+  gap: 18px;
+  padding: 0;
+}
+.socials_link {
+  fill: white;
+  background: transparent;
+  cursor: pointer;
+}
+.socials_link:hover svg,
+.socials_link:focus svg {
+  fill: brown;
+  transform: scale(1.3);
+}
