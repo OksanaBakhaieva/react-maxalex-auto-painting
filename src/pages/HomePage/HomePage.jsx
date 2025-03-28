@@ -9,8 +9,8 @@ function HomePage() {
         <>
             <Hero />
             <About />
-            <Reviews />
             <FAQ/>
+            <Reviews />
         </>
     )
 };
