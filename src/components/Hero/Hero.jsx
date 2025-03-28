@@ -1,6 +1,6 @@
-import Services from '../Services/Services';
 import services from '../../../services.json';
 import css from './Hero.module.css';
+import ServicesHomePage from '../ServicesHomePage/ServicesHomePage';
 
 function Hero() {
     return (
@@ -11,7 +11,7 @@ function Hero() {
                     <span>Trust our skilled technicians to restore your vehicle to its pre-accident condition.</span>
                 </h1>
             </div>
-            <Services services={services} />
+            <ServicesHomePage services={services} />
         </div>
     )
 };

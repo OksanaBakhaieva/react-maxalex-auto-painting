@@ -1,56 +1,78 @@
-[
-  {
-    "id": 1,
-    "icon": "/icons/icon1.svg",
-    "title": "Custom Bodywork & Paint",
-    "text": "Makalex offers customized bodywork and paint services to restore your vehicle to its pre-accident condition. Whether it's a minor dent or a major collision repair, our skilled technicians ensure a flawless finish."
-  },
-  {
-    "id": 2,
-    "icon": "/icons/icon2.svg",
-    "title": "Custom Interior Upgrades",
-    "text": "Enhance the interior of your vehicle with our bespoke interior upgrade solutions. From premium upholstery to personalized accessories, we bring your vision to life with meticulous attention to detail."
-  },
-  {
-    "id": 3,
-    "icon": "/icons/icon3.svg",
-    "title": "Performance Enhancement",
-    "text": "Experience improved performance with our custom solutions for diesel and gasoline engines. Our expertise in engine tuning and upgrades ensures optimal power and efficiency for your vehicle."
-  },
-  {
-    "id": 4,
-    "icon": "/icons/icon4.svg",
-    "title": "Custom Body Kits Installation",
-    "text": "Transform the look of your vehicle with our professional installation of custom body kits. We specialize in fitting and customizing body kits to enhance the aesthetics and aerodynamics of your vehicle."
-  },
-  {
-    "id": 5,
-    "icon": "/icons/icon5.svg",
-    "title": "Wheel & Tire Customization",
-    "text": "Personalize your vehicle with our wheel and tire customization services. From custom alloy wheels to performance tires, we offer tailored solutions to elevate the look and handling of your vehicle."
-  },
-  {
-    "id": 6,
-    "icon": "/icons/icon6.svg",
-    "title": "Exhaust System Customization",
-    "text": "Upgrade your vehicle's exhaust system for enhanced sound and performance. Our custom exhaust solutions are designed to deliver a unique acoustic experience and improved engine efficiency."
-  },
-  {
-    "id": 7,
-    "icon": "/icons/icon7.svg",
-    "title": "Custom Lighting Installations",
-    "text": "Illuminate the road with our custom lighting installations. Explore a range of lighting options including LED headlights, underglow kits, and interior lighting upgrades to personalize your vehicle's appearance."
-  },
-  {
-    "id": 8,
-    "icon": "/icons/icon8.svg",
-    "title": "Suspension Customization",
-    "text": "Achieve the perfect balance of comfort and performance with our suspension customization services. We offer tailored suspension upgrades and adjustments to suit your driving preferences."
-  },
-  {
-    "id": 9,
-    "icon": "/icons/icon9.svg",
-    "title": "Customized Paint Protection",
-    "text": "Protect your vehicle's finish with our specialized paint protection solutions. Our application of premium paint protection films and coatings ensures long-lasting defense against environmental elements."
-  }
-]
+{
+  "Bodywork": [
+    {
+      "id": 1,
+      "icon": "/icons/body-repair.svg",
+      "title": "Bodywork Repairs",
+      "text": "We specialise in repairing major body damage after accidents, restoring your vehicle's structural integrity and appearance with expert craftsmanship."
+    },
+    {
+      "id": 2,
+      "icon": "/icons/welding.svg",
+      "title": "Rust Panel Replacement & Welding",
+      "text": "Extend the life of your vehicle with our rust panel replacement and welding services. We remove corroded sections and restore them to their original condition."
+    },
+    {
+      "id": 3,
+      "icon": "/icons/paint-repair.svg",
+      "title": "Minor Paintwork Repairs",
+      "text": "From scratches to small dents, our minor paintwork repair services ensure your car maintains a flawless and polished appearance."
+    },
+    {
+      "id": 4,
+      "icon": "/icons/polishing.svg",
+      "title": "Car Polishing & Detailing",
+      "text": "Enhance the shine and protection of your vehicle with our professional car polishing and detailing services. We bring back that showroom finish!"
+    },
+    {
+      "id": 5,
+      "icon": "/icons/pdr.svg",
+      "title": "Paintless Dent Removal (PDR)",
+      "text": "Remove minor dents and dings without repainting, preserving your car’s original finish using specialised PDR techniques."
+    },
+    {
+      "id": 6,
+      "icon": "/icons/headlight.svg",
+      "title": "Headlight Restoration",
+      "text": "Improve nighttime visibility and refresh your car’s look with our headlight restoration services. Say goodbye to cloudy or faded lenses."
+    },
+    {
+      "id": 7,
+      "icon": "/icons/glass-repair.svg",
+      "title": "Car Glass Repairs",
+      "text": "Repair chips and cracks in your vehicle’s glass before they spread. Our glass repair service ensures safety and clarity."
+    }
+  ],
+  "Mechanical Services": [
+    {
+      "id": 8,
+      "icon": "/icons/oil-change.svg",
+      "title": "Oil & Filter Changes",
+      "text": "Keep your engine running smoothly with regular oil and filter changes, ensuring longevity and performance."
+    },
+    {
+      "id": 9,
+      "icon": "/icons/brake-repair.svg",
+      "title": "Brake System Repairs",
+      "text": "Ensure your safety on the road with our comprehensive brake repair services, from pad replacements to full system overhauls."
+    },
+    {
+      "id": 10,
+      "icon": "/icons/exhaust.svg",
+      "title": "Exhaust System Repairs",
+      "text": "Fix leaks, enhance performance, and reduce emissions with our expert exhaust system repair services."
+    },
+    {
+      "id": 11,
+      "icon": "/icons/suspension.svg",
+      "title": "Suspension Repairs",
+      "text": "Maintain a smooth and stable ride with our suspension repair services, including shock and strut replacements."
+    },
+    {
+      "id": 12,
+      "icon": "/icons/lock-repair.svg",
+      "title": "Door Lock & Window Regulator Repairs",
+      "text": "Fix malfunctioning locks and window regulators to ensure security and convenience in your vehicle."
+    }
+  ]
+}

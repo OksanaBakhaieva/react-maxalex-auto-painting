@@ -8,7 +8,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div className={css.container}>
+    <div className={css.container} id='faq'>
       <Title variant="light" title="Frequently Asked Questions" />
       <div className={css.list}>
         {questions.map(({ id, question, answer }, index) => {

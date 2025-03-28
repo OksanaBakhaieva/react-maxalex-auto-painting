@@ -5,7 +5,7 @@ import css from './Footer.module.css';
 function Footer() {
     return (
         <>
-            <div className={css.container}>
+            <div className={css.container} id='contacts'>
                 <Title variant="light" title="Contact Us" />
                 <div className={css.wrapper}>
                     <p className={css.contact}>Call us on +447468790981</p>

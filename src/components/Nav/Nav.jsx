@@ -16,7 +16,7 @@ function Nav({ variant }) {
                 <NavLink text="About Us" href="#about"/>
                 <NavLink text="FAQ" href="#faq" />
                 <NavLink text="Reviews" href="#reviews" />
-                <NavLink text="Contacts" href="#contact" />
+                <NavLink text="Contacts" href="#contacts" />
             </nav>
     )
 }

@@ -3,7 +3,7 @@ import css from './About.module.css';
 
 function About() {
     return (
-        <div className={css.container}>
+        <div className={css.container} id='about'>
             <h3 className={css.subtitle}>About Makalex Car Body Repairs</h3>
             <Title variant="light" title="Trust our skilled technicians to restore your vehicle"/>
             <div className={css.wrapper}>

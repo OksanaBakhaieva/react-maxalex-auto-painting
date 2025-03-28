@@ -7,20 +7,28 @@ function Services({services}) {
     return (
         <div className={css.container}>
             <div className={css.wrapper}>
-                <Title variant="light" title="Discover our full range of custom vehicle solutions" />
+                <Title variant="light" title="Services offered" />
                 <ul className={css.list}>
-                    {services.map(({id,icon,title,text}) => (
-                            <>
-                                <li key={id} className={css.item}>
-                                    <ServiceCard
-                                        icon={icon}
-                                        title={title}
-                                        text={text}
+                    {/*Object.entries() transforms this object into an array[["Bodywork", [...]], ["Mechanical Services", [...]] ]*/}
+
+                    {Object.entries(services).map(([category, services]) => (
+                        <li key={category} className={css.item}>
+                            <h2 className={css.title}> {category}</h2>
+                            <div className={css.service_container}>
+                                {services.map(({ id, icon, title, text }) => (
+                                    <ServiceCard 
+                                    key={id} 
+                                    icon={icon} 
+                                    title={title} 
+                                    text={text} 
                                     />
-                                </li>
-                            </>
-                        )
-                    )}
+                                ))}
+                            </div>
+                            
+                        </li>
+                                                
+                    )
+                )}                     
                 </ul>
             </div>
         </div>
