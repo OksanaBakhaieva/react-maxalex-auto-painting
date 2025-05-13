@@ -13,7 +13,7 @@ function ServicesHomePage({services}) {
                             <>
                                 <li key={category} className={css.item}>
                                     <h4 className={css.title}>{category}</h4>
-                                    <Button text="Read More ->"/>
+                                <Button text="Read More ->" onClick={()=>window.open("http://localhost:5173/services", "_blank")} />
                                 </li>
                             </>
                         )

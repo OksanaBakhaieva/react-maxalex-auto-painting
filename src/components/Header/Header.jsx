@@ -15,7 +15,7 @@ function Header() {
             </div>
             <address className={css.contacts}>
                 <a className={css.link} href="tel:+447468790981" target="_blank">
-                    <p className={ css.phone}>+(44)746 879 0981</p>
+                    <p className={ css.phone}>+ (44) 746 879 0981</p>
                     {/* <svg width="32" height="32">
                         <use href="/sprite.svg#icon-phone"></use>
                         <use href={`${import.meta.env.BASE_URL}sprite.svg#icon-phone`}></use>
