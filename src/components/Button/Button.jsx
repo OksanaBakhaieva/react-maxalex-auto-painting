@@ -1,9 +1,9 @@
 import css from './Button.module.css';
 
-function Button({text}) {
+function Button({text, onClick}) {
     return (
         <>
-            <button className={css.button} type='button'>
+            <button onClick={onClick} className={css.button} type='button'>
                 {text} 
             </button>
         </>

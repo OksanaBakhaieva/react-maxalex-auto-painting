@@ -1,4 +1,4 @@
-import NavLink from '../NavLink/NavLink';
+import NavLinks from '../NavLinks/NavLinks';
 import clsx from 'clsx';
 import css from './Nav.module.css';
 
@@ -12,12 +12,12 @@ function Nav({ variant }) {
     
     return (
         <nav className={NavClasses}>
-                <NavLink text="Home" href="#home"/>
-                <NavLink text="Services" href="#services" />
-                <NavLink text="About Us" href="#about"/>
-                <NavLink text="FAQ" href="#faq" />
-                <NavLink text="Reviews" href="#reviews" />
-                <NavLink text="Contacts" href="#contacts" />
+                <NavLinks text="Home" href="/" variant={variant} />
+                <NavLinks text="Services" href="/services/" variant={variant} /> 
+                <NavLinks text="About Us" href="#about"variant={variant} />
+                <NavLinks text="FAQ" href="#faq" variant={variant} />
+                <NavLinks text="Reviews" href="#reviews" variant={variant} />
+                <NavLinks text="Contacts" href="#contacts" variant={variant} />
             </nav>
     )
 }
