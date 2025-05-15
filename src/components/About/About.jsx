@@ -8,7 +8,7 @@ function About() {
             <h3 className={css.subtitle}>Trust our skilled technicians to restore your vehicle</h3>
             <div className={css.wrapper}>
                 <p className={css.text}>Makalex is dedicated to providing superior custom vehicle solutions tailored to your specific needs. Our skilled technicians have years of experience in restoring vehicles to their pre-accident condition. We take pride in delivering exceptional craftsmanship and attention to detail.</p>
-                <img src="/public/maxalex.logo.jpg" className={css.image} alt=""/>
+                <img src="/public/images/IMG_4019.png" className={css.image} alt=""/>
             </div>
         </div>
     )

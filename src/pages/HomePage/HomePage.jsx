@@ -17,9 +17,9 @@ function HomePage() {
             }
         }
     }, [location]);
-    
+
     return (
-        <div className="container" id="home">
+        <div className="container">
             <Hero />
             <About />
             <FAQ/>
@@ -27,5 +27,6 @@ function HomePage() {
         </div>
     )
 };
+
 
 export default HomePage;

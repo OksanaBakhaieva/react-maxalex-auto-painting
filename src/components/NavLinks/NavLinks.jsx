@@ -1,49 +1,39 @@
+import AnchorLink from '../AnchorLink/AnchorLink';
 import clsx from 'clsx';
 import css from './NavLinks.module.css';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function NavLinks({ text, href, variant}) {
-    const NavLinksClasses = clsx(css.nav_link,
-        {
-            [css.header]: variant === 'header',
-            [css.modal]: variant === 'modal'
-        }
+function NavLinks({ text, href, variant }) {
+  const NavLinkClasses = clsx(css.nav_link, {
+    [css.header]: variant === 'header',
+    [css.modal]: variant === 'modal',
+  });
+
+  const isAnchor = href.includes('#');
+  const isInternal = href.startsWith('/');
+
+  if (isAnchor) {
+    const [path = '/', hash] = href.split('#');
+    return (
+      <AnchorLink to={path} hash={hash} className={NavLinkClasses}>
+        {text}
+      </AnchorLink>
     );
+  }
 
-    const navigate = useNavigate();
-    const location = useLocation();
+  if (isInternal) {
+    return (
+      <Link to={href} className={NavLinkClasses}>
+        {text}
+      </Link>
+    );
+  }
 
-    const handleAnchorClick = (e) => {
-        e.preventDefault();
-        const [path, hash] = href.split('#');
-        if (location.pathname !== `/${path}` && path) { //переход на нужную страничку
-            navigate(`/${path}`, {    // путь,куда я хочу отправить
-                state: {                //состояние маршрута, доступно на целевой странице через useLocation()
-                    scrollTo: hash
-                }
-            });
-        } else if (hash) {     //eсли мы уже на нужной странице, то просто скроллим до указанной в hash секции
-            const section = document.getElementById(hash);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        } else {
-            navigate(path);     //для случаев, когда наши линки просто ведут на страничку
-        }
-    }
-
-    const isInternal = href.startsWith("/");
-    const isAnchor = href.startsWith('#');
-
-    if (isInternal) {
-        return <Link className={NavLinksClasses} to={href}>{text}</Link>
-    } else if (href.includes('#')) {
-        return <a className={NavLinksClasses} href={href} onClick={handleAnchorClick}>{text}</a>
-    } else {
-        return <a className={NavLinksClasses} href={href}>{text}</a>
-    }
+  return (
+    <a href={href} className={NavLinkClasses} target="_blank" rel="noopener noreferrer">
+      {text}
+    </a>
+  );
 }
-
-
 
 export default NavLinks;

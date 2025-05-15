@@ -11,7 +11,7 @@ function Hero() {
                     <span>Trust our skilled technicians to restore your vehicle to its pre-accident condition.</span>
                 </h1>
             </div>
-            <div id="services">
+            <div>
                 <ServicesHomePage services={services} />
             </div>
         </div>
