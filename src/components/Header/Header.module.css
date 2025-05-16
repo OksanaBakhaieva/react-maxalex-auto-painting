@@ -23,27 +23,50 @@
   align-items: end;
   gap: 24px;
 }
-/* .link {
-  fill: white;
-  color: white;
+.link {
   display: flex;
   gap: 12px;
   align-items: flex-start;
   transition: all 250ms;
-} */
+}
 
-/* .link:hover svg,
-.link:focus svg {
+.link:hover,
+.link:focus,
+.link:focus-visible {
   fill: brown;
   transform: scale(1.3);
-} */
-.phone {
-  font-weight: 400;
-  color: white;
-  margin: 0;
 }
-.phone:hover,
-.phone:focus {
-  color: brown;
-  text-decoration: underline;
+.phone {
+  display: none;
+}
+.menu_open_button {
+  all: unset; /*сброс всех глобальных стилей для button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.menu_open_button:focus,
+.menu_open_button:focus-visible,
+.menu_open_button:hover,
+.menu_open_button:active {
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .phone {
+    display: block;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+  }
+  .phone:hover,
+  .phone:focus {
+    color: brown;
+    text-decoration: underline;
+  }
+  .menu_open_button {
+    display: none;
+  }
 }

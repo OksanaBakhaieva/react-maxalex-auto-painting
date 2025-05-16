@@ -2,7 +2,8 @@ import { useState } from "react";
 import questions from "../../../faq.json";
 import Title from "../Title/Title";
 import css from "./FAQ.module.css";
-import sprite from "/sprite.svg";
+import { SlArrowUpCircle, SlArrowDownCircle} from "react-icons/sl";
+
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -18,15 +19,9 @@ export default function FAQ() {
               <div className={css.question_wrapper}>
                 <h4 className={css.question}>{question}</h4>
                 <button className={css.toggle} onClick={() => setOpenIndex(isOpen ? null : index)}>
-                  <svg
-                    width="24"
-                    height="24"
-                    className={isOpen ? css.toggleDown : css.toggleUp}
-                  >
-                    <use
-                      href={`${sprite}#${isOpen ? "icon-circle-up" : "icon-circle-down"}`}
-                    />
-                  </svg>
+                  {isOpen ? (
+                    <SlArrowUpCircle size={24} color="white"/>
+                  ) : (<SlArrowDownCircle size={24} color="white" />)}
                 </button>
               </div>
               {isOpen && <p className={css.answer}>{answer}</p>}

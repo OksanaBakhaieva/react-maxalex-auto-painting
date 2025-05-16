@@ -6,12 +6,19 @@
   padding: 0;
 }
 .socials_link {
-  fill: white;
-  background: transparent;
-  cursor: pointer;
+  display: none;
 }
-.socials_link:hover svg,
-.socials_link:focus svg {
-  fill: brown;
-  transform: scale(1.3);
+
+@media screen and (min-width: 1024px) {
+  .socials_link {
+    display: flex;
+    fill: white;
+    background: transparent;
+    cursor: pointer;
+  }
+  .socials_link:hover svg,
+  .socials_link:focus svg {
+    fill: brown;
+    transform: scale(1.3);
+  }
 }

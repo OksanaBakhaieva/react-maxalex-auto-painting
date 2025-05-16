@@ -1,21 +1,24 @@
 import css from "./Socials.module.css";
+import { SlPhone, SlSocialFacebook, SlEnvolope } from "react-icons/sl";
+
 
 function Socials() {
     return (
         <>
             <ul className={css.list}>
                 <li>
+                    <a className={css.socials_link}  href="https://www.facebook.com/share/15YqPcVzV5/?mibextid=wwXIfr" target="_blank">
+                        <SlSocialFacebook size={24} color="white"/>
+                    </a>
+                </li>
+                <li>
                     <a className={css.socials_link}  href="mailto:makalex.office@gmail.com" target="_blank">
-                        <svg width="40" height="40">
-                            <use href="/sprite.svg#icon-mail"></use>
-                        </svg>
+                        <SlEnvolope size={24} color="white"/>
                     </a>
                 </li>
                 <li>
                     <a className={css.socials_link} href="https://wa.me/447468790981" target="_blank">
-                        <svg width="40" height="40">
-                            <use href="/sprite.svg#icon-whatsapp"></use>
-                        </svg>
+                        <SlPhone size={24} color="white" />
                     </a>
                 </li>
             </ul>
