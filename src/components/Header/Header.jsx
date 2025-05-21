@@ -1,8 +1,9 @@
 import Logo from '../Logo/Logo';
 import Nav from '../Nav/Nav';
 import Modal from '../Modal/Modal';
-import Socials from '../Socials/Socials';
-import { SlPhone } from "react-icons/sl";
+import Button from '../Button/Button';
+
+import { SlMenu } from "react-icons/sl";
 
 import css from './Header.module.css';
 import { useState } from 'react';
@@ -25,14 +26,11 @@ function Header() {
                 <Nav />
                 
             </div>
-            <address className={css.contacts}>
-                {/* <a className={css.link} href="tel:+447468790981" target="_blank">
-                    <p className={css.phone}>+ (44) 746 879 0981</p>
-                </a> */}
-                <Socials/>
-            </address>
+            <div>
+                <Button text="Request a quote" />
+            </div>
             <button className={css.menu_open_button} onClick={openModal} type="button">
-                <SlPhone size={24} color="white"/>    
+                <SlMenu size={24} color="white"/>    
             </button>
             <Modal isOpen={isModalOpen} onClose={closeModal} />
         </div>

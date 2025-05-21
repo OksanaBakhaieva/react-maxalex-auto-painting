@@ -1,6 +1,5 @@
 import { useLocation } from 'react-router-dom';
 import About from '../../components/About/About';
-import FAQ from '../../components/FAQ/FAQ';
 import Hero from '../../components/Hero/Hero';
 import Reviews from '../../components/Reviews/Reviews';
 import css from './HomePage.module.css';
@@ -22,7 +21,6 @@ function HomePage() {
         <div className="container">
             <Hero />
             <About />
-            <FAQ/>
             <Reviews />
         </div>
     )

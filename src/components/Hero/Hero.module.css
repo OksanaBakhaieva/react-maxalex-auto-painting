@@ -11,6 +11,7 @@
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   justify-self: end;
   padding: 64px 32px;
   text-align: left;
@@ -24,15 +25,18 @@
   text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px,
     rgba(0, 0, 0, 0.6) -1px -1px 1px;
   grid-column: 2/3;
+  margin-bottom: 36px;
 }
-.wrapper {
-  grid-column: 2/3;
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  align-items: right;
-  margin-top: 164px;
-}
-span {
+
+.text {
   text-transform: capitalize;
+  font-size: 36px;
+  grid-column: 2/3;
+}
+.socials {
+  display: flex;
+  align-items: end;
+  font-size: 36px;
+  grid-column: 2/3;
+  justify-content: right;
 }

@@ -2,16 +2,13 @@
   width: 100%;
   background-color: black;
   opacity: 0.8;
-}
-.wrapper {
-  background-color: black;
   padding: 32px;
 }
 
 .list {
+  margin-top: 24px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   border: 1px solid grey;
   color: white;
   text-decoration: none;
@@ -23,6 +20,7 @@
 }
 .title {
   font-size: 24px;
+  margin-bottom: 12px;
 }
 .text {
   font-size: 18px;

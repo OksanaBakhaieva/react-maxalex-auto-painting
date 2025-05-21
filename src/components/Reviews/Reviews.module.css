@@ -1,0 +1,45 @@
+.container {
+  padding: 32px;
+  border: 2px solid gray;
+  text-align: center;
+  position: relative;
+}
+.swiper {
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.card {
+  border: 2px solid gray;
+  padding: 20px;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.text {
+  font-size: 16px;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.author {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+.swiper_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  z-index: 10;
+}
+.swiper_rightarrow,
+.swiper_leftarrow {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}

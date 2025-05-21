@@ -16,6 +16,7 @@
   border: 1px solid grey;
   color: white;
   text-decoration: none;
+  margin-top: 36px;
 }
 .item {
   border: 1px solid grey;
@@ -25,7 +26,9 @@
 }
 .title {
   font-size: 24px;
+  margin-bottom: 24px;
 }
-.text {
+.description {
   font-size: 18px;
+  margin-bottom: 24px;
 }

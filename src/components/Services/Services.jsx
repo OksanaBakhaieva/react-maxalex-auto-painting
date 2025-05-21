@@ -9,9 +9,10 @@ function Services({ services=servicesData }) {
     }
     return (
         <div className={css.container}>
-            <div className={css.wrapper}>
-                <Title variant="light" title="Services offered" />
-                <ul className={css.list}>
+                <Title variant="light" title="Our Services" />
+                <h4 className={css.subtitle}>Discover our full range of custom vehicle solutions</h4>
+         
+                    <ul className={css.list}>
                     {/*Object.entries() transforms this object into an array[["Bodywork", [...]], ["Mechanical Services", [...]] ]*/}
 
                     {Object.entries(services).map(([category, serviceList]) => (
@@ -33,7 +34,6 @@ function Services({ services=servicesData }) {
                     )
                 )}                     
                 </ul>
-            </div>
         </div>
     )
 };
