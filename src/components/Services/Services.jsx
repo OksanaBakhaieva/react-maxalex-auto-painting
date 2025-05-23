@@ -8,12 +8,11 @@ function Services({ services=servicesData }) {
         return <p className="css.error">No services available.</p>
     }
     return (
-        <div className={css.container}>
+        <div className={css.container} id='services'>
                 <Title variant="light" title="Our Services" />
                 <h4 className={css.subtitle}>Discover our full range of custom vehicle solutions</h4>
          
                     <ul className={css.list}>
-                    {/*Object.entries() transforms this object into an array[["Bodywork", [...]], ["Mechanical Services", [...]] ]*/}
 
                     {Object.entries(services).map(([category, serviceList]) => (
                         <li key={category} className={css.item}>

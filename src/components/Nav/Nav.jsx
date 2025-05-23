@@ -11,7 +11,7 @@ function Nav({ variant }) {
   return (
     <nav className={NavClasses}>
       <NavLinks text="Home" href="/" variant={variant} />
-      <NavLinks text="Services" href="/services" variant={variant} />
+      <NavLinks text="Services" href="/services/" variant={variant} />
       <NavLinks text="About Us" href="/#about" variant={variant} />
       <NavLinks text="FAQ" href="/#faq" variant={variant} />
       <NavLinks text="Reviews" href="/#reviews" variant={variant} />
