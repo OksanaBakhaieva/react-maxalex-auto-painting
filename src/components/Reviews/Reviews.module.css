@@ -2,7 +2,6 @@
   padding: 32px;
   border: 2px solid gray;
   text-align: center;
-  position: relative;
 }
 .swiper {
   margin-bottom: 32px;
@@ -32,14 +31,14 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0%;
   left: 50%;
   z-index: 10;
 }
-.swiper_rightarrow,
-.swiper_leftarrow {
-  font-size: 24px;
+.swiper_leftarrow,
+.swiper_rightarrow {
+  font-size: 36px;
   color: white;
   cursor: pointer;
 }
